@@ -1,0 +1,260 @@
+/*property applied to whole page*/
+*{
+box-sizing: border-box; /*border box set to page*/
+overflow-x: hidden;  /*overflow-x hidden for responsiveness and padding,margin set to 0*/
+padding: 0;
+margin: 0;
+}
+
+/* property set to body*/
+.body {
+background-color: black; /*bg color set to back and text set to white color*/
+color: white;
+}
+
+/* property set to panel that was the header part*/
+.panel {
+display: flex; 
+align-items: center;
+height: 1%;
+padding:15px;
+}
+/* footer properties*/
+.footer {
+background-color: #f8f9fa; /*bg color set to white*/
+padding: 30px; /* padding 30ps given to footer*/
+text-align: center; /*text of footer align to senter*/
+max-width: 100%; /*max width of footer 100%*/
+border-top: 10px solid blue; /*blue border at top for good appearance*/
+}
+
+/* properties set to nav bar*/
+.Navg {
+background-color: #f8f9fa;
+max-width: 100%; /*max width of nav bar set to 100%*/
+padding: 10px; /* padding of 10px given to nav bar*/
+}
+
+.nav_link {
+color: blue; /* links having blue color*/
+text-align: center; /* aliged to center*/
+text-decoration: none; /* Remove default underlines */
+}
+
+/* property set to the links that are in unordered list*/
+.list{
+text-align: center;
+list-style: none; /* list style set to none*/
+}
+
+/*hover property given to the links*/
+.nav_link:hover {
+color: black; 
+}
+/*footer text copyright given 10px margin at top for better look*/
+.footer-text {
+margin-top: 10px; /* Adjust the margin as needed for space between icons and text */
+}
+
+/* property for logo*/
+#LOGO {
+border-radius: 15px;
+padding: 10px;
+max-width: 100%; /* adjust width as needed*/
+align-items: center; /* logo aligned center of teh iv in which it is*/
+max-height: 120px; /* Adjust maximum height as needed */
+margin: 0 10px; /* Adjust margin as needed for spacing between icons */
+}
+
+/*properties for thr input fields and the alert divs*/
+#name,#email,#phone,#nameError,#emailError,#phoneError,#roleError{
+padding:5px;
+margin:10px; /*margin of about 10px*/
+font-size: 1.2em; /* Adjust font size as needed */
+display: block; /* display of block*/
+width:95%; /* width given about 95%*/
+}
+/* form container having contact form and contact form right side having padding of 5px*/
+.form_container{
+padding: 5%; 
+}
+
+/* textarea for message */
+#Message {
+padding:10px;
+margin-left:1px; /* margin given to make it look aligned*/
+margin:5px;
+font-size: 1.2em;
+display: block; 
+border:1px; /* border i given with 5px radius to make its corners a bit round*/
+border-radius: 5px;
+max-width: 95%; /* Adjust the width as needed */
+}
+
+/* property set to contact form*/
+.contact_form{
+margin-top: 20px;  /* margin and padding give to make it appear good*/
+background-color: blue; 
+padding: 15px;
+border: 1px solid blue; /* border  wth 5px radius*/
+border-radius: 5px;
+
+}
+/* right side of cotact form having contact info*/
+.contact-right-side{
+  margin-top: 20px;
+  padding:10px;
+  background-color: white;
+border: 1px solid white;
+border-radius: 5px;
+}
+
+/*map showing location of comapny*/
+.map iframe{
+height:100%;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px; /* radius given only to bottom side as the upper side showd connected to info part*/
+}
+
+/* address info*/
+.location {
+font-size: 100%;
+align-items: center;
+color: rgb(50, 50, 250);
+background-color: rgb(238, 236, 236);
+padding: 15px;
+
+}
+
+/* adress info having phone number etc in list*/
+.location ul li {
+font-size: 100%; /* font size of 100% so that if increase or decrease with location div size*/
+list-style: none;
+}
+
+/* Add styles for the icons */
+.location i {
+font-size: 100%;
+margin-right: 10px;
+}
+
+/* Adjusts font size as needed for responsiveness */
+.location h2, .location p, .location li {
+margin: 10px 0;
+font-size: 100%;
+}
+.contact_form label {
+margin-left:12px; /*margin given to left to make it more aligned*/
+font-size: 1.2em; /* Adjust font size as needed */
+}
+
+
+/* radio button given property*/
+.contact_form input[type="radio"] {
+margin-left:12px;
+transform: scale(1.5); /* Adjust the scale factor as needed to make the radio button bigger*/
+margin-right: 5px; /* Adjust the margin as needed for spacing between radio buttons and labels */
+}
+
+/* submit button */
+#Submit{
+font-size: larger;
+padding:10px;
+border-radius: 5px;
+color:Blue;
+background-color: rgb(189, 181, 181);
+}
+
+/* submit button width increased to the full width of its outer div*/
+.submit-button #Submit{
+width:95%;
+margin:5px;
+}
+/* hover given yo submit button*/
+#Submit:hover{
+background-color: black;
+cursor:pointer;
+}
+
+.contact-list{
+padding:10px;
+}
+/* style set to horizontal line*/
+.styled-hr {
+border: 0;
+height: 1px;
+background: blue; /* Adjust the color as needed */
+margin-bottom:30px; /* margin above lien*/
+margin-top: 20px; /* margin below line*/
+}
+
+/* image of hands in form set as bg img of the div in which the img is form-img div*/
+.form-image {
+background-image: url('FormImage.png');
+background-repeat: no-repeat; /* img no repeat*/
+background-size: 100% 100%; /* size of img*/
+background-position: center;
+/* Additional styling properties if needed */
+border-top-left-radius:5px; /*border radius given only to the top corners*/
+border-top-right-radius:5px;
+
+
+}
+/* height given to form-img with respect to the whole outer div*/
+.contact-right-side .form-image{
+height:25%;
+}
+/* map overflow hidden*/
+.map{
+box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+overflow: hidden;
+}
+
+/* map given height with respcet to its outer div parent element*/
+.contact-right-side .map{
+height:25%;
+overflow: hidden;
+}
+/* location given height with respcet to its outer div parent element*/
+.contact-right-side .location{
+height:50%;
+overflow: hidden;
+}
+
+/* social media icons having display of flex to align them to center easily*/
+.social-icons {
+  display: flex;
+  justify-content: center;
+
+}
+
+.social-icon {
+  display: inline-block; /* all icons in one line row*/
+  max-width: 30px; /* width and height given to the each icon*/
+  max-height: 30px;
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  font-size: 20px; /* Adjust the size as needed */
+  margin: 0 15px; 
+  color:blue;
+  overflow: hidden; /* overflow x,y hidden*/
+  padding-bottom:50px;
+}
+
+/* radio button overfloew hidden*/
+.Inputradio,.Inputradio label,.form-heading{
+overflow-x: visible;
+}
+/* sselect option feild width height increased with repsec to parent*/
+.city-options select{
+padding:10px;
+margin:5px;
+margin-left:3px;
+font-size: 1.2em;
+display: block;
+width: 95%; /* Adjust the width as needed */
+border:1px;
+border-radius: 5px;
+}
+

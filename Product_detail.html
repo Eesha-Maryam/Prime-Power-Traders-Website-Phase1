@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link of css page of product detail page-->
+  <link rel="stylesheet" href="Product_detail.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Product_Details</title>  
+</head>
+<body class="body" >
+        <!--header part having the company logo and the social media icons-->
+  <header class="header">
+    <div >
+        <!--logo of the company in header img tag having id, link of img, alternative text , width and height of the image-->
+      <img
+        id="LOGO"
+        src="logo4.png"
+        alt="PRIME_POWER"
+        width="100%"
+        height="auto"
+      />
+    </div>
+      <!--div inside the panel header having social media icons-->
+    <div class="social-icons">
+    <!--twitter icon-->
+      <a href="https://twitter.com" target="_blank" class="social-icon">
+          <i class="fa fa-twitter"></i>
+      </a>
+        <!--facebok icon-->
+      <a href="https://www.facebook.com" target="_blank" class="social-icon">
+          <i class="fa fa-facebook"></i>
+      </a>
+      <!--youtube icon-->
+      <a href="https://www.youtube.com" target="_blank" class="social-icon">
+          <i class="fa fa-youtube"></i>
+      </a>
+        <!--instagram icon-->
+      <a href="https://instagram.com" target="_blank" class="social-icon">
+          <i class="fa fa-instagram"></i>
+      </a>
+  </div>
+  </header>
+  <!--search bar div containg the input field search bar-->
+  <div id="searchbar">
+    <!--input field having the id searchinput used in javascript to apply highlighting function to the entered content-->
+    <input type="text" id="searchInput" placeholder="Enter term you want to search...">
+    <!--button containing the onclick event to highligh on button click-->
+    <button class="searchbtn" onclick="searchAndHighlight()">Search</button> 
+          </div>
+
+          <!--nav bar of the page having link of all the pages of the website-->
+  <nav class="Navg">
+      <ul class="navg_list">
+        <li >
+            <!--home page of the website-->
+          <a id="Home" class="nav_link" href="#" target="_blank">Home</a>
+        </li>
+        <li >
+            <!--about us page of the website-->
+          <a id="About" class="nav_link" href="#">About Us</a>
+        </li>
+        <li >
+              <!--product page of the website-->
+          <a id="Product" class="nav_link" href="#">Product</a>
+        </li>
+        <li >
+            <!--contact us page of the website-->
+          <a id="Contact" class="nav_link" style="color: black" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </nav>
+  
+<div class="all-products-container">
+    <!--product 1-->
+    <div id="product1-details">
+<!--product container containing all the descrition,imgetc of products-->
+    <div class="product-container product-item">
+      <!--product image inside parent product-img-->
+      <div class="product-image">
+        <img src="chiller1.png" alt="chiller1" width="100%">
+      </div>
+<!--product detail div containing table for product imp descrip-->
+      <div class="product-details" id="productDetails">
+          <h3 class="products_heading">70 Ton Scroll Chiller 230/480V</h3>
+          <!--table starting-->
+        <table class="products_detail_table">
+          <!--table row1-->
+          <tr>
+            <td>Make</td>
+            <td>Trane</td>
+          </tr>
+                <!--table row2-->
+          <tr>
+            <td>Model</td>
+            <td>RTA 70</td>
+          </tr>
+            <!--table row3-->
+          <tr>
+            <td>Capacity</td>
+            <td>70 ton</td>
+          </tr>
+            <!--table row4-->
+          <tr>
+              <td>Weight</td>
+              <td>8,000 lbs</td>
+            </tr>
+              <!--table row5-->
+            <tr>
+              <td>Water volume,gals</td>
+              <td>39.8</td>
+            </tr>
+              <!--table row6-->
+            <tr>
+              <td>Overall Dimension</td>
+              <td>194 1/2"L x 88 3/16"W x 87 1/2"H</td>
+            </tr>
+            <!--table end-->
+        </table>
+      </div>
+    </div>
+    <!--overview of the product1-->
+    <div class="Product_description">
+      <h2>Overview</h2>
+        <p id="searching">A portable air cooled chiller package that offers flexible, temporary, fluid cooling solution using equipment that has been designed and engineered to be self contained for commercial and industrial air conditioning and process cooling applications. This package is ready for operation with a minimal setup of two 4" Dixon type quick connect fittings and four cam-lock power cables.</p>
+      <!--heading for features of the product-->
+        <h2>Features</h2>
+      <ul>
+      <li>70-ton scroll chiller is designed to provide a cooling capacity of 70 tons, typically measured in British Thermal Units per hour (BTU/hr).</li>
+      <!--line break at each feature for better appearance-->
+      <br>
+      <li>Scroll compressors are commonly used in chillers due to their efficiency and reliability. They operate with fewer moving parts, reducing maintenance requirements.</li>
+      <br>
+      <li>The chiller will use a specific refrigerant for the cooling process. Common refrigerants include R-410A, which is known for its environmental friendliness.</li>
+      <br>
+      <li>Modern scroll chillers are designed for high efficiency, often featuring advanced controls and variable speed compressors to optimize performance based on load conditions.</li>
+      <br>
+      <li>Advanced control systems allow for precise monitoring and adjustment of the chiller's operation. This can include temperature control, diagnostics, and integration with building management systems.</li>
+      <br>
+  </ul>
+    </div>
+  </div>
+<!--horizontal line to separate product 1 description from product2-->
+  <hr class="style-hr">
+
+<!--product 2-->
+
+<div id="product2-details">
+<!--product container containing all the descrition,imgetc of products-->
+<div class="product-container product-item">
+      <!--product image inside parent product-img-->
+      <div class="product-image">
+        <img src="chiller2.png" alt="chiller2" width="100%">
+      </div>
+<!--product detail div containing table for product imp descrip-->
+<div class="product-details">
+<!--name of product in h3-->
+<h3 class="products_heading">Cat DE33 GC (50 Hz)</h3>
+    <!--table starting-->
+<table class="products_detail_table">
+    <!--table row1-->
+<tr>
+  <td>maximum rating</td>
+  <td>33.0kVA</td>
+</tr>
+    <!--table row2-->
+<tr>
+  <td>minimum rating</td>
+  <td>33.0kVA</td>
+</tr>
+    <!--table row3-->
+<tr>
+  <td>frequency</td>
+  <td>50 Hz</td>
+</tr>
+    <!--table row4-->
+<tr>
+    <td>speed</td>
+    <td>1500 rpm</td>
+  </tr>
+      <!--table row5-->
+  <tr>
+    <td>Duty cycle</td>
+    <td>standby</td>
+  </tr>
+      <!--table row6-->
+  <tr>
+    <td>voltage</td>
+    <td>380 to 415 volts</td>
+  </tr>
+  <!--table end-->
+</table>
+</div>
+</div>
+<!--overview of the product2-->
+<div class="Product_description">
+<h2>Overview</h2>
+<p id="searching">Producing 33 kVA of reliable power at 50 Hz, our DE33 GC diesel generator set is designed to meet ISO 8528-5 transient response requirements.</p>
+<!--heading for features of the product-->
+<h2>Features</h2>
+<!--list containing all the features of product-->
+<ul>
+<li>Cat generator set packages have been fully prototype tested</li>
+<!--line break at each feature for better appearance-->
+<br>
+<li>Accepts 100% block load in one step and meets NFPA 110 loading requirements</li>
+<br>
+<li>Conform to ISO 8528-5 steady state and transient response requirements</li>
+<br>
+<li>Reliable, rugged, durable design.</li>
+<br>
+</ul>
+</div>
+</div>
+</div>
+<!--horizontal line to separate product 2 description from product3-->
+<hr class="style-hr">
+<!--product 3-->
+
+<div id="product3-details">
+<!--product container containing all the descrition,imgetc of products-->
+<div class="product-container product-item">
+          <!--product image inside parent product-img-->
+        <div class="product-image">
+          <img src="generator.png" alt="generator1" width="100%">
+        </div>
+<!--product detail div containing table for product imp descrip-->
+<div class="product-details">
+    <!--name of product in h3-->
+  <h3 class="products_heading">Diesel generator</h3>
+  <!--table starting-->
+<table class="products_detail_table">
+        <!--table row1-->
+  <tr>
+    <td>maximum rating</td>
+    <td>33.0kVA</td>
+  </tr>
+        <!--table row2-->
+  <tr>
+    <td>minimum rating</td>
+    <td>33.0kVA</td>
+  </tr>
+        <!--table row3-->
+  <tr>
+    <td>frequency</td>
+    <td>50 Hz</td>
+  </tr>
+        <!--table row4-->
+  <tr>
+      <td>speed</td>
+      <td>1500 rpm</td>
+    </tr>
+          <!--table row5-->
+    <tr>
+      <td>Duty cycle</td>
+      <td>standby</td>
+    </tr>
+          <!--table row6-->
+    <tr>
+      <td>voltage</td>
+      <td>380 to 415 volts</td>
+    </tr>
+<!--table end-->
+</table>
+</div>
+</div>
+<!--overview of the product3-->
+<div class="Product_description">
+<h2>Overview</h2>
+<p id="searching">diesel power generator, is a device that converts diesel fuel into electrical energy. It operates on the principles of internal combustion, where diesel fuel is ignited in a combustion chamber to produce high-pressure gases. These gases then drive a generator to produce electricity.</p>
+<!--feature of product3-->
+<h2>Features</h2>
+<!--list containing all the features of product-->
+<ul>
+<li>durability and long operational life</li>
+  <!--line break at each feature for better appearance-->
+<br>
+<li>highly reliable and can provide a stable power supply.</li>
+<br>
+<li>available in a wide range of power outputs, from a few kilowatts to several megawatts</li>
+<br>
+<li>equipped with an Automatic Transfer Switch (ATS), allowing them to automatically start and switch to backup power in the event of a power outage..</li>
+<br>
+</ul>
+</div>
+</div>
+
+<!--horizontal line to separate product 2 description from product4-->
+<hr class="style-hr">
+
+<!--product 4-->
+<div id="product4-details">
+<!--product container containing all the descrition,imgetc of products-->
+<div class="product-container product-item">
+    <!--product image inside parent product-img-->
+        <div class="product-image">
+          <img src="chiller3.jpeg" alt="chiller4" width="100%" style="margin-top:20px">
+        </div>
+<!--product detail div containing table for product imp descrip-->
+<div class="product-details">
+    <!--name of product in h3-->
+  <h3 class="products_heading">Air cooled water chiller</h3>
+  <!--table starting-->
+<table class="products_detail_table" style="margin-bottom:20px;">
+<!--table row1-->
+<tr>
+  <td>refrigerant</td>
+  <td>R-514A and R-1233zd Compressor </td>
+</tr>
+<!--table row1-->
+<tr>
+  <td>capacity</td>
+  <td>120 to 4000+ tons</td>
+</tr>
+<!--table row2-->
+<tr>
+  <td>full-loaded-efficency</td>
+  <td>0.4872kW/tons</td>
+</tr>
+<!--table row3-->
+<tr>
+    <td>part-loaded-efficency</td>
+    <td>0.3055kW/tons</td>
+  </tr>
+  <!--table row4-->
+  <tr>
+    <td>Compressor type</td>
+    <td>centrifugal</td>
+  </tr>
+  <!--table row5-->
+  <tr>
+    <td>Pressure level</td>
+    <td>Low</td>
+  </tr>
+<!--table end-->
+</table>
+</div>
+</div>
+<!--overview of the product4-->
+<div class="Product_description">
+<h2>Overview</h2>
+<p id="searching">Modular design is adopted for Air-Cooled Screw Liquid Chiller, the suppliers for refrigeration fittings and control components are chosen from world-famous manufacturers, and the state of the art intelligent control scheme is employed, enabling high efficiency, energy-saving, stable and reliable operation of the chiller, self-equipped multi-chiller joint control function can realize joint control of 8 chillers at maximum and easily satisfy air conditioning demands of different occasions.</p>
+<!--feature of product4-->
+<h2>Features</h2>
+<ul>
+<li>The heat exchanger on water side with patented design of counter flow in combination with internal threaded high-efficiency tube can promote heat exchange efficiency by 20% to 30%.</li>
+  <!--line break at each feature for better appearance-->
+<br>
+<li>Adoption of semi-closed twin-screw compressor supported by design of special build-in muffer reduces noise and vibration of compressor.</li>
+<br>
+<li>Lug design enables simple and safe hoisting.</li>
+<br>
+<li>Water flow switch has been installed on water pipe of heat exchanger on water side, and operation being after startup, saving the time of site installation.</li>
+<br>
+<li>Modular design is adopted, and joint control module interface is reserved on microcomputer controller of each chiller. Networking control can be achieved only by connecting lines of communication among multiple chillers and setting the host and save machines.</li>
+<br>
+</ul>
+</div>
+</div>
+<!--horizontal line to separate product 4 description from product5-->
+<hr class="style-hr">
+
+<!--product 5-->
+<div id="product5-details">
+<!--product container containing all the descrition,imgetc of products-->
+<div class="product-container product-item">
+    <!--product image inside parent product-img-->
+        <div class="product-image">
+          <img src="chiller5.jpeg" alt="chiller5" width="100%">
+        </div>
+<!--product detail div containing table for product imp descrip-->
+<div class="product-details">
+    <!--name of product in h3-->
+  <h3 class="products_heading">Air cooled screw chiller</h3>
+  <!--table starting-->
+<table class="products_detail_table">
+<!--table row1-->
+  <tr>
+    <td>refrigerant</td>
+    <td>R-134A Compressor </td>
+  </tr>
+  <!--table row2-->
+  <tr>
+    <td>Cooling capacity</td>
+    <td>57 - 682 ton</td>
+  </tr>
+  <!--table row3-->
+  <tr>
+    <td>Compressor type</td>
+    <td>screw</td>
+  </tr>
+  <!--table row4-->
+  <tr>
+      <td>Operating Weight</td>
+      <td>3584 - 31863 lb</td>
+    </tr>
+    <!--table row5-->
+    <tr>
+      <td>Width</td>
+      <td>7ft</td>
+    </tr>
+    <!--table row6-->
+    <tr>
+    <td>height</td>
+    <td>8.3ft</td>
+  </tr>
+      <!--table end-->
+</table>
+</div>
+</div>
+<!--overview of the product5-->
+<div class="Product_description">
+<h2>Overview</h2>
+<p>Air-cooled screw chillers operate on the vapor compression refrigeration cycle. They use a screw compressor to compress refrigerant gas, transferring heat from the building or process to the outside air.The screw compressor is a key component in air-cooled screw chillers. It efficiently compresses the refrigerant gas to a high pressure, allowing for effective heat exchange.</p>
+<!--feature of product5-->
+<h2>Features</h2>
+<!--list containing all the features of product-->
+<ul>
+<li>air conditioning and comfort cooling</li>
+  <!--line break at each feature for better appearance-->
+<br>
+<li>Efficient cooling solutions for data centers to maintain optimal operating temperatures for servers.</li>
+<br>
+<li>Critical for maintaining comfortable conditions and preserving medical equipment.</li>
+<br>
+<li>Suitable for large-scale heating, ventilation, and air conditioning systems.</li>
+<br>
+</ul>
+</div>
+</div>
+<!--horizontal line to separate product 5 description from product6-->
+<hr class="style-hr">
+<!--product 6-->
+<div id="product6-details">
+<!--product container containing all the descrition,imgetc of products-->
+<div class="product-container product-item">
+    <!--product image inside parent product-img-->
+        <div class="product-image">
+          <img src="generator2.png" alt="generator2" width="100%">
+        </div>
+<!--product detail div containing table for product imp descrip-->
+<div class="product-details">
+    <!--name of product in h3-->
+  <h3 class="products_heading">power generator</h3>
+  <!--table starting-->
+<table class="products_detail_table" >
+<!--table row1-->
+  <tr>
+    <td>model</td>
+    <td>2018</td>
+  </tr>
+  <!--table row2-->
+  <tr>
+    <td>frequency</td>
+    <td>50.0kVA</td>
+  </tr>
+  <!--table row3-->
+  <tr>
+    <td>capacity</td>
+    <td>50 Hz</td>
+  </tr>
+  <!--table row4-->
+  <tr>
+      <td>speed</td>
+      <td>1500 rpm</td>
+    </tr>
+    <!--table row5-->
+    <tr>
+      <td>Duty cycle</td>
+      <td>standby</td>
+    </tr>
+      <!--table end-->
+</table>
+</div>
+</div>
+<!--overview of the product6-->
+<div class="Product_description">
+<h2>Overview</h2>
+<p id="searching">Industrial Power Diesel Generator Generic is a high quality, photo real model that will enhance detail and realism to any of your rendering projects. The model has a fully textured, detailed design that allows for close-up renders, and was originally modeled in 3ds Max 2012 and rendered with V-Ray. Renders have no postprocessing.</p>
+<!--feature of product6-->
+<h2>Features</h2>
+<!--list containing all the features of product-->
+<ul>
+<li>Diesel generators are available in a wide range of power outputs, from small portable generators for residential use to large industrial generators for critical facilities.</li>
+  <!--line break at each feature for better appearance-->
+<br>
+<li>The fuel tank capacity determines how long the generator can run before requiring a refill. Larger tanks provide extended runtime.</li>
+<br>
+<li>Diesel generators feature cooling systems to prevent the engine from overheating during prolonged operation.</li>
+<br>
+<li>monitoring capabilities, allowing users to check the status, fuel levels, and other parameters remotely.</li>
+<br>
+<li>optimize power output based on the connected load.</li>
+</ul>
+</div>
+</div>
+</div>
+<!--foter of the page having social media icons along with  reserve rights-->
+    <footer class="footer">
+      <div class="social-icons">
+        <!--twitter icon-->
+        <a href="https://twitter.com" target="_blank" class="social-icon">
+            <i class="fa fa-twitter"></i>
+        </a>
+          <!--facebook icon-->
+        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+            <i class="fa fa-facebook"></i>
+        </a>
+          <!--youtube icon-->
+        <a href="https://www.youtube.com" target="_blank" class="social-icon">
+            <i class="fa fa-youtube"></i>
+        </a>
+          <!--instagram icon-->
+        <a href="https://instagram.com" target="_blank" class="social-icon">
+            <i class="fa fa-instagram"></i>
+        </a>
+    </div>
+    
+      <p clas="footer-text" style="color: black">
+        &copy; 2023 Prime Power Traders. All rights reserved.
+      </p>
+    </footer>
+<script>
+  // JavaScript code for handling navigation to home page
+  document.getElementById('Home').addEventListener('click', function() {
+    navigateToPage('homepage.html'); //contain id of link and attaches the  homepage.html to link using function addeventlistener
+  });
+  // JavaScript code for handling navigation to about us page
+  document.getElementById('About').addEventListener('click', function() {
+    navigateToPage('About_Us.html');
+  });
+  // JavaScript code for handling navigation to product page
+  document.getElementById('Product').addEventListener('click', function() {
+  navigateToPage('Products.html');});
+  // JavaScript code for handling navigation to contact us page
+  document.getElementById('Contact').addEventListener('click', function() {
+  navigateToPage('Contact_Us.html');
+});
+
+  function navigateToPage(page) {
+    // Using window.location to navigate to the specified page
+    window.location.href = page;
+  }
+
+    // Function to parse query parameters from the URL when  click image having index 1,2,3 the index in a kind of url move to detail page and this function retrieve the index part from url
+    function getQueryParam(name) {
+      const urlSearchParams = new URLSearchParams(window.location.search);
+      return urlSearchParams.get(name);
+    }
+  
+      // Function to display the details of the selected product
+      function showProductDetails() {
+      const productIndex = getQueryParam('product'); //the index of clicked image comes here and store in productindex
+      const productDetailSection = document.getElementById(`product${productIndex}-details`);//concatenates product (index1,2,3,4 son) details that are the id of each product section
+      //if the product section exists scroll to that section
+      if (productDetailSection) {
+        productDetailSection.scrollIntoView({ behavior: 'smooth' });
+      } 
+    }
+  
+    // Call the function to display the details when the page loads
+    document.addEventListener('DOMContentLoaded', showProductDetails);
+
+    //search and highlight function of current page details anything searched in this page will be highlighted in this page
+function searchAndHighlight() {
+  // Get the search term from the input field
+  var searchTerm = document.getElementById('searchInput').value.trim().toLowerCase();
+
+  // Reset previous highlights when reload 
+  var elements = document.querySelectorAll('.highlight');
+  elements.forEach(function (element) {
+      element.classList.remove('highlight');
+  });
+
+  // If the search term is not empty
+  if (searchTerm !== "") {
+      // Get all elements in which to search
+      var searchElements = document.querySelectorAll('.products_heading, .Product_description, .products_detail_table td');
+
+      // Iterate through each element and highlight matches
+      searchElements.forEach(function (element) {
+          var content = element.innerHTML.toLowerCase();
+          if (content.includes(searchTerm)) { 
+            //if search term exist in the content of element replace it with search term and move within the element to that specific word we need to highlight
+              element.innerHTML = content.replace(searchTerm, '<span class="highlight">' + searchTerm + '</span>');
+          }
+      });
+  }
+}
+
+
+
+//searching content of this page from other pages the searched terms from other pages will get stored in local storage and here we will take them from that storage for highlighting
+
+    // Retrieve the search term from local storage
+    var searchTerm2 = localStorage.getItem('searchTerm2');
+
+    
+// highlighting logic based on the search term
+if (searchTerm2) {
+searchAndHighlight2(searchTerm2);
+}
+
+//function that highlight content that matches
+function searchAndHighlight2(searchTerm2) {
+        // Reset previous highlights when reload 
+  var elements = document.querySelectorAll('.highlight');
+  elements.forEach(function (element) {
+      element.classList.remove('highlight');
+  });
+//if serach term is not empty
+  if (searchTerm2 !== "") {
+  //  Get all elements in which to search
+  const elementsToHighlight = document.querySelectorAll('.products_heading, .Product_description, .products_detail_table td');
+// Iterate through each element and highlight matches
+  elementsToHighlight.forEach(function (element){
+      var elementText = element.innerHTML.toLowerCase();
+      if (elementText.includes(searchTerm2 )) {
+            //if search term exist in the content of element replace it with search term and move within the element to that specific word we need to highlight
+              element.innerHTML = elementText.replace(searchTerm2 , '<span class="highlight">' + searchTerm2  + '</span>');
+          }
+  });
+}
+}
+window.addEventListener('unload', function () {
+  // Clear search term from local storage when i reload the detail page..
+  localStorage.removeItem('searchTerm2');
+});
+</script>
+
+</body>
+</html>

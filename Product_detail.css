@@ -1,0 +1,350 @@
+/*property applied to whole page*/
+body,html{ 
+overflow-x: hidden; /* Hide horizontal scrollbar */
+padding: 0;/* padding and margin of html 0*/
+margin: 0;
+}
+
+/* property set to body*/
+.body {
+box-sizing: border-box;
+background-color: black;/*bg color set to back and text set to white color*/
+color: white;
+}
+/* header part of page*/
+.header {
+display: flex; /* having display flex to keep icons and logo in row*/
+justify-content: space-between; /* keeping space between icon and logo*/
+align-items: center; 
+background-color: black; /* Change the background color as needed */
+margin: 0 30px ;
+}
+/*property of margin and padding given to al the heading h1,h2,h3 of the page to make them appear more aigned towards left*/
+.heading{
+padding:20px;
+margin:10px;
+text-align: left;
+}
+/*heading in the footer section*/
+.info-list .heading{
+padding:20px;
+margin:10px;
+text-align: center;
+}
+/* panel having the header part div*/
+.panel {
+display: flex;/* Using flexbox to ensure all list items stay in a row */
+align-items: center;/*all element inside aligned to center*/
+height: 1%;
+}
+
+#LOGO {
+border-radius: 15px;/* rounded corners of the logo 15px rounded*/
+padding: 10px;/* padding set to 10px*/
+align-items: center;/*align ogo center to its parent element div*/
+max-height: 120px; /* Adjust the maximum height as needed */
+margin: 0 10px; /* Adjust the margin as needed for spacing between icons */
+max-width: 100%; /* Adjust the logo width as needed */
+}
+
+.nav_link {
+color: blue;;/* links having blue color*/
+text-align: center;/* aliged to center*/
+text-decoration: none; /* Remove default underlines */
+}
+/*hover property given to the links*/
+.nav_link:hover {
+color: black;
+}
+
+.Navg {
+background-color: #f8f9fa;
+width: 100%;/*max width of nav bar set to 100%*/
+padding: 10px;/* padding of 10px given to nav bar*/
+margin-bottom: 50px;
+}
+
+
+  /* footer part of page having all info */
+  .footer {
+      background-color: #f8f9fa;
+      padding: 20px;
+      text-align: center;/*all text aligned to center*/
+      margin-top: 25px;
+      max-width: 100%;/* foter given width of 100%  full width of page*/
+      border-top:10px solid blue;
+    }
+
+    .navg_list {
+      list-style: none;/*remove default list style*/
+      display: flex; /* Using flexbox to ensure all list items stay in a row */
+      justify-content: space-around; /* Adjust the spacing between items */
+      align-items: center; /* Center items vertically within the navbar */
+    }
+    
+  /* product container containg img and table of  products*/
+    .product-container {
+      display: flex; /* keeping the table and img in row*/
+      align-items: center; 
+      justify-content: space-around;
+      padding: 20px;
+    }
+    /* img of products in contaner*/
+    .product-image {
+      max-width: 50%; /* Set the maximum width of the image to 50% */
+      margin-right: 20px;
+    }
+    /* detail part containing overview and features*/
+    .product-details {
+      max-width: 50%; /* Set the maximum width of the details to 50% */
+    }
+    /* table containing imp des of product*/
+    table {
+      max-width: 100%;
+      border-collapse: collapse;/* helps craete single border between the cells consecutive cells*/
+      margin-top: 20px;
+    }
+/* 1px border given to table and its inner cells*/
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+/* align the content in cell to center with 10px padding*/
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* giving colors to table*/
+    .products_detail_table{
+background-color: gray;
+color:black;
+
+}
+/*name of the products above table aligned center in its parent div*/
+.products_heading{
+text-align: center;
+}
+/*product des parent containing overview and featureS*/
+.Product_description {
+margin-top: 20px; /* Adjust the top margin as needed */
+margin-left:90px;
+margin-right:70px;
+text-align: justify; /* Align text justified for a cleaner look */
+}
+/* social media icons having display of flex to align them  in row easily*/
+.social-icons {
+display: flex;
+justify-content: center;
+}
+
+.social-icon {
+display: inline-block;/* all icons in one line row*/
+max-width: 100%;/* width and height given to the each icon*/
+height: 30px; /* height of icons in px*/
+background-size: cover; /* icons covering its background fa fa*/
+background-position: center;
+padding: 20px;
+font-size: 20px; /* Adjust the size as needed */
+margin: 0 10px; 
+color:blue;/* color of icon*/
+
+}
+/* horizontal bar separating product details*/
+.style-hr{
+border: 0;
+height: 1px;/* height of hr in px*/
+background: white; /* Adjust the color as needed */
+margin:100px 80px 100px;/* margin given to line*/
+
+}
+/* container parent containing every product and its related data*/
+.all-products-container{
+margin:10px; /* margin set around parant*/
+margin-top:100px;
+margin-bottom: 100px;
+}
+
+/* iphone pro 12 screen size adjustments*/
+/*iphone SE screen size adjustments*/
+/*Galaxy Note 3 screen size adjustments*/
+/*Galaxy Note 2 screen size adjustments*/
+/*Galaxy S9+ screen size adjustments*/
+/*Galaxy S5 screen size adjustments*/
+/*Galaxy S8+ screen size adjustments*/
+/*blackberry Z30 screen size adjustments*/
+/* Moto G4 screen size adjustments*/
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+/* boduy of the page containg border box for better box mode*/
+body {
+box-sizing: border-box;
+display: flex; /* keeps everything in row*/
+flex-direction: column;
+flex-wrap: wrap; /* wrap all content around the body*/
+align-items: center; /* aligned everyting inside to the center of the page*/
+justify-content: center; /* justify the content to center*/
+align-content: center;
+align-self: center;
+margin: 0; /* margin and padding givem 0*/
+padding: 0; /* Remove any padding to ensure full width */
+}
+/* header part of the page given block display and width given equal to weidth of it parent body*/
+.header {
+display: block;
+max-width: 100%;
+text-align: center;
+}
+/* logo of the page given max width of 100 so that it cover full weidth of page at top*/
+#LOGO {
+max-width: 100%;
+}
+/* nav bar of the page*/
+.Navg {
+display: flex;
+justify-content: space-around; /* Adjust to space items evenly */
+width: 100%; /* width given equal to parent weidth*/
+margin-bottom: 10px;
+background-color: #f8f9fa; /* Add background color to the navigation */
+padding: 15px 0; /* Add padding to the top and bottom of the navigation */
+}
+/* list containing the link of pages*/
+.navg_list {
+margin: 0;/* padding and margin given 0*/
+padding: 0;
+list-style: none; /* remove default list style*/
+display: flex; /* display flex to keep everting inside in row*/
+justify-content: space-around; /* Adjust to space items evenly */
+width: 100%; 
+}
+/* nav link are link to pages*/
+.nav_link {
+color: blue; /* color of links white*/
+text-decoration: none;
+border: 1px solid white; /* Add border to the links */
+padding: 10px; /* Add padding to the links */
+}
+
+/* nav link hover property*/
+.nav_link:hover {
+color: black;
+}
+/* social icons having max width of 100% and justified to center*/
+.social-icon{
+max-width:100%;
+justify-content: center;
+}
+/* div containing the overview and features*/
+.Product_description {
+margin-left: 10px; 
+margin-right: 10px; /* matgin of left right given 10px for better appearance*/
+justify-content: center; /* alaigned and justified to center of page*/
+align-items: center;
+}
+
+/* footer part of te web page and its weidth increased rto 100%*/
+.footer {
+width: 100%;
+text-align: center;
+margin-top: 10px;
+border-top: 10px solid blue;
+}
+/* product etail div containing table its width increased to the width of its parent element*/
+.product-details table{
+width:100%;
+}
+/* heading of products larger font*/
+.products_heading{
+font-size: larger;
+}
+/* product conatiner contaning table and img*/
+.product-container {
+display: flex;
+flex-direction: column; /*flex direction given col so that img and table comes in single col 1 under other in mobile device*/
+align-items: center; /* and are aligned to center*/
+justify-content: center;
+text-align: center;
+padding: 20px;
+margin: 0;
+}
+/* product img and its detail section given max-width of 100*/
+.product-image,
+.product-details {
+max-width: 100%;
+margin-right: 0;
+}
+
+}
+
+
+/*Nest Hub screen size adjustments*/
+/*ipad Pro screen size adjustments*/
+/* microdoft lumia 550 screen size adjustments*/
+/* ipad air screen size adjustments*/
+/* ipad mini screen size adjustments*/
+@media only screen and (max-width: 1024px) {
+
+/* product img margin increased */
+.product-image {
+width: 100%; /* Set the maximum width of the image to 100% */
+margin-right: 0;
+margin-bottom: 10px;
+}
+
+.product-details {
+width: 100%; /* Make the product details take full width */
+}
+
+.product-item {
+display: flex;
+flex-direction: column; /*image and details vertically in col*/
+align-items: center;
+margin-bottom: 20px; /* Adjust the margin as needed */
+
+}
+
+.product-details table{
+width:100%;
+}
+/* heading font and its family changed in some devices*/
+.products_heading{
+font-size: larger;
+font-family: 'Times New Roman', Times, serif;
+}
+}
+
+/* search bar div in which their is button and search input field*/
+#searchbar{
+display: flex;  /*flexbox for aligning input field and buton in a row*/
+padding-bottom:15px;
+align-items: center; /* align items inside to center*/
+align-self: center; 
+justify-content: center;
+margin-top:10px;
+}
+
+/* search input field*/
+#searchInput{
+width:40%; /*width of 40% set for field*/
+background-color: black;
+color: #ddd;
+font-size: 25px; /* font size of text in search par 25px*/
+padding:5px;
+
+}
+/*search button that highlight content on click*/
+.searchbtn{
+padding:6px;
+font-size: 25px;
+background-color: white;
+color: black;
+border:5px;
+border-radius: 3px;
+}
+/*search button applied hover*/
+.searchbtn:hover{
+background-color: gray;
+}
+
+.highlight{
+background-color: yellow;
+}
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link of css page of about us page-->
+  <link rel="stylesheet" href="About_Us.css">
+    <!--javascript link from boostrap 4.0 (grid use for responsiveness)-->
+  <link 
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Lato"
+  rel="stylesheet"
+  type="text/css"
+/>
+<link
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  rel="stylesheet"
+  type="text/css"
+/>
+  <title>About_Us</title>
+</head>
+<body>
+  <!--body of webpage having bootstrap class container fluid covering whole width page-->
+  <body class="container-fluid body">
+    <!--header part having the company logo and the social media icons-->
+      <header class="row panel">
+        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-6">
+             <!--logo of the company in header img tag having id, link of img, alternative text , width and height of the image-->
+          <img
+            id="LOGO"
+            src="logo4.png"
+            alt="PRIME_POWER"
+            width="100%" 
+            height="auto"
+          />
+        </div>
+        <!--div inside the panel header having social media icons-->
+          <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-6 social-icons">
+            <!--twitter icon-->
+            <a href="https://twitter.com" target="_blank" class="social-icon" style="margin-right: 8%;">
+                <i class="fa fa-twitter"></i>
+            </a>
+              <!--facebok icon-->
+            <a href="https://www.facebook.com" target="_blank" class="social-icon" style="margin-right: 8%;">
+                <i class="fa fa-facebook"></i>
+            </a>
+              <!--youtube icon-->
+            <a href="https://www.youtube.com" target="_blank" class="social-icon" style="margin-right: 8%;">
+                <i class="fa fa-youtube"></i>
+            </a>
+              <!--instagram icon-->
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+                <i class="fa fa-instagram"></i>
+            </a>
+        </div>
+      </header>
+<!--nav bar of the page having link of all the pages of the website-->
+      <nav class="Navg">
+          <ul class="row">
+            <li class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-xs-3 list">
+              <!--home page of the website-->
+              <a id="Home" class="nav_link" href="#" target="_blank">Home</a>
+            </li>
+            <li class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-xs-3 list">
+               <!--about us page of the website-->
+              <a id="About" class="nav_link" href="#">About Us</a>
+            </li>
+            <li class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-xs-3 list">
+               <!--product page of the website-->
+              <a id="Product" class="nav_link" href="#">Product</a>
+            </li>
+            <li class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-xs-3 list">
+              <!--contact us page of the website-->
+              <a id="Contact" class="nav_link" style="color: black" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+    <!--banner for the about us page-->
+        <div class="row">
+          <img
+            class="col-lg-12 col-xl-12 col-md-12 col-sx-12 col-sm-12 panel2"
+            src="AboutUsBanner.png"
+            alt="PIC"
+          />
+        </div>
+
+        <!--panel 3 having the info about the company its history-->
+        <div class="row panel3">
+          <!--heading-->
+          <h1 class="cl-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12 heading">
+            About Us
+          </h1>
+          <!--paragraph 1-->
+          <p class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12">
+              Prime Power Traders, under the visionary leadership of CEO Mushtaq Ahmad, has been a cornerstone in the industrial machinery trading sector since its establishment in 2005. Operating as a proprietorship, we specialize in sourcing and delivering top-notch industrial equipment, including a diverse range of industrial chillers, compressors, generators, and motors. Mushtaq Ahmad, as the founder, personally travels to countries such as the UK, Germany, China, and Dubai, ensuring that we procure the highest quality machinery at competitive prices.
+          </p>
+              <!--paragraph 2-->
+          <p class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12">
+              Our commitment to excellence goes beyond transactions; it's a commitment to providing quality products and unmatched service. We operate with a unique model, offering a personalized experience to clients who visit our interconnected warehouses in Darogwala. With a total of three attached warehouses, we showcase our machinery, ensuring clients have direct access to information and a firsthand look at our offerings.
+              </p>
+                  <!--paragraph 3-->
+              <p class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12">
+                  As an engineer-led company, we pride ourselves on not only providing detailed information and handling paperwork but also offering expert repair services. From fixing programmable logic controllers (PLCs) to addressing hardware issues, we stand by our products with reliable after-sales support. Our mission at Prime Power Traders is clear: to provide quality machinery and unparalleled service to our clients. This commitment is further emphasized by our provision of warranties on select products. Over the years, we have built a legacy of integrity, expertise, and customer satisfaction, making Prime Power Traders your trusted partner in industrial machinery solutions.
+                  </p>
+        </div>
+      <!--footer of the webapge containing product names, news and contact info-->
+  <footer class="footer">
+      
+<!--row info containing list of product company sale-->
+      <div class="row info">
+<div class="col-xl-4 col-sm-12 info-list">
+  <h2 class="heading">Products</h2>
+  <ul class="product-list">
+    <li>Scroll Chillers</li>
+    <li>Water-Cooled Chillers</li>
+    <li>Screw Chillers</li>
+    <li>Air-Cooled Chillers</li>
+    <li>Generators</li>
+    <li>Compressors</li>
+    <li>Motors</li>
+  </ul>
+</div>
+
+<div class="col-xl-4 col-lg-4 col-md-4 col-xs-12 col-sm-12 info-list">
+  <h2 class="heading">News</h2>
+  <!--link to all the news-->
+<ul class="product-list">
+<li>
+  <a href="https://www.aggreko.com/en-fj/news/2020/noeur-articles/how-do-chillers-and-cooling-towers-work" target="_blank">How do chillers work?</a>
+</li>
+<li>
+  <a href="https://www.legacychillers.com/knowledge-base/running-a-chiller-on-generator-power/" target="_blank">How to run chillers on generators?</a>
+</li>
+<li>
+  <a href="https://www.tranebelgium.com/files/book-doc/12/fr/12.1hp13yp1.pdf" target="_blank">Chiller design and control</a>
+</li>
+<li>
+  <a href="https://www.energy.gov/eere/amo/articles/absorption-chillers-chp-systems-doe-chp-technology-fact-sheet-series-fact-sheet" target="_blank">Absorption chiller for CHP system</a>
+</li>
+<li>
+  <a href="https://www.iqsdirectory.com/articles/chillers.html">Types of chillers </a>
+</li>
+</ul>
+</div>
+<!--div containing the contact info-->
+<div class="col-xl-4 col-lg-4 col-md-4 col-xs-12 col-sm-12 info-list">
+  <h2 class="heading">Contact</h2>
+  <ul class="product-list">
+    <li>
+  <i class="fa fa-map-marker" style="font-size:25px"></i>
+  PLOT NO.129, STREET NO.2, SHARIF GARDEN, MACHINERY MARKET, DAROGAWALA LAHORE
+</li>
+<li>
+  <i class="fa fa-phone" style="font-size:25px"></i>
+  0321-9466454
+</li>
+<li>
+  <i class="fa fa-phone" style="font-size:25px"></i>
+  0300-9466454
+</li>
+</ul>
+</div>
+</div>
+
+      <!--copyright div containing the socila medi icon and reserved rights-->
+<div class="copyright">
+<div class="social-icons">
+  <a href="https://twitter.com" target="_blank" class="social-icon">
+      <i class="fa fa-twitter"></i>
+  </a>
+  <a href="https://www.facebook.com" target="_blank" class="social-icon">
+      <i class="fa fa-facebook"></i>
+  </a>
+  <a href="https://www.youtube.com" target="_blank" class="social-icon">
+      <i class="fa fa-youtube"></i>
+  </a>
+  <a href="https://instagram.com" target="_blank" class="social-icon">
+      <i class="fa fa-instagram"></i>
+  </a>
+</div>
+<!--footer text showing reserved rights of company-->
+      <p clas="footer-text" style="color: black">
+        &copy; 2023 Prime Power Traders. All rights reserved.
+      </p>
+    </div>
+    </footer>
+      <!--javascript part for page navigation and products linkage with detail page-->
+    <script>
+          //page navigation to the home page
+    document.getElementById('Home').addEventListener('click', function() {
+    navigateToPage('homepage.html');
+  });
+   //page navigation to about us page
+  document.getElementById('About').addEventListener('click', function() {
+    navigateToPage('About_Us.html');
+  });
+
+    //page navigation to the contact us page
+  document.getElementById('Contact').addEventListener('click', function() {
+    navigateToPage('Contact_Us.html');
+  });
+
+  //page navigation to the product page
+  document.getElementById('Product').addEventListener('click', function() {
+    navigateToPage('Products.html');
+  });
+
+  function navigateToPage(page) {
+    // Use window.location to navigate to the specified page
+    window.location.href = page;
+  } 
+      </script>
+</body>
+</html>

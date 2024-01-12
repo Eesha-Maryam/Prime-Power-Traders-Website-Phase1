@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--link of css page of product page-->
+<link rel="stylesheet" href="Products.css">
+    <!--javascript link from boostrap 4.0 (use of grid for responsiveness)-->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+crossorigin="anonymous"
+/>
+<link
+href="https://fonts.googleapis.com/css?family=Lato"
+rel="stylesheet"
+type="text/css"
+/>
+<link
+href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+rel="stylesheet"
+type="text/css"
+/>
+<title>Products</title>
+</head>
+<!--body of webpage having bootstrap class container fluid covering whole width of webpage-->
+<body class="container-fluid body" >
+    <!--header part having the company logo and the social media icons-->
+    <header class="row panel">
+      <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-6">
+          <!--logo of the company in header img tag having id, link of img, alternative text , width and height of the image-->
+        <img
+          id="LOGO"
+          src="logo4.png"
+          alt="PRIME_POWER"
+          width="100%"
+          height="auto"
+        />
+      </div>
+      <!--div inside the panel header having social media icons-->
+        <div class=" col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-6 social-icons">
+            <!--twitter icon-->
+          <a href="https://twitter.com" target="_blank" class="social-icon" style="margin-right:8%">
+              <i class="fa fa-twitter"></i>
+          </a>
+            <!--facebok icon-->
+          <a href="https://www.facebook.com" target="_blank" class="social-icon" style="margin-right:8%">
+              <i class="fa fa-facebook"></i>
+          </a>
+            <!--youtube icon-->
+          <a href="https://www.youtube.com" target="_blank" class="social-icon" style="margin-right:8%">
+              <i class="fa fa-youtube"></i>
+          </a>
+            <!--instagram icon-->
+          <a href="https://instagram.com" target="_blank" class="social-icon" >
+              <i class="fa fa-instagram"></i>
+          </a>
+      </div>
+    </header>
+        <!--search bar div containg the input field search bar-->
+        <div id="searchbar" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <!--input field having the id searchinput used in javascript to apply highlighting function to the entered content-->
+          <input type="text" id="searchInput" placeholder="Enter term you want to search...">
+          <!--button containing the onclick event to highligh on button click-->
+          <button class="searchbtn" onclick="SearchAndHighlight()">Search</button> 
+                </div>
+<!--nav bar of the page having link of all the pages of the website-->
+    <nav class="Navg">
+        <ul class="row">
+          <li class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-xs-3 list">
+              <!--home page of the website-->
+            <a id="Home" class="nav_link" href="#" target="_blank">Home</a>
+          </li>
+            <!--about us page of the website-->
+          <li class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-xs-3 list">
+                <!--product page of the website-->
+            <a id="About" class="nav_link" href="#">About Us</a>
+          </li>
+          <li class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-xs-3 list">
+              <!--contact us page of the website-->
+            <a id="Product" class="nav_link" href="#">Product</a>
+          </li>
+          <li class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-xs-3 list">
+            <a id="Contact" class="nav_link" style="color: black" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+<!--div containing all the product-->
+      <div class="All-Products">
+      <div class="row">
+        <!--heading our products-->
+        <h1 class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12 heading">
+          Our Products
+        </h1>
+      </div>
+      <!--product container containg 3 products in one row-->
+      <div class="row product-container">
+        <!--product 1 with img and name and onclick evenet applied to img with index 1-->
+        <div class="col-md-4 col-xl-4 col-lg-4 col-xs-12 col-sm-12 product-img">
+          <img
+            src="chiller1.png"
+            alt="Chiller1"
+            class="img"
+            width="100%"
+            onclick="redirectToProductDetail(1)"
+          />
+          <h3 class="product-text">70 Ton Scroll Chiller</h3>
+        </div>
+    <!--product 2 with img and name and onclick event applied to img with index 2-->
+        <div class="col-md-4 col-xl-4 col-lg-4 col-xs-12 col-sm-12 product-img">
+          <img
+            src="chiller2.png"
+            alt="chiller2"
+            class="img"
+            width="100%"
+            onclick="redirectToProductDetail(2)"
+          />
+          <h3 class="product-text">DE33 GC (50 Hz)</h3>
+        </div>
+    <!--product 3 with img and name and onclick evenet applied to img with index 3-->
+        <div class="col-md-4 col-xl-4 col-lg-4 col-xs-12 col-sm-12 product-img">
+          <img
+            src="generator.png"
+            alt="generator"
+            class="img"
+            width="100%"
+            onclick="redirectToProductDetail(3)"
+          />
+          <h3 class="product-text">Diesel generator</h3>
+        </div>
+      </div>
+    <!--product 4 with img and name and onclick event applied to img with index 1-->
+      <div class="row product-container">
+        <div class="col-md-4 col-xl-4 col-lg-4 col-xs-12 col-sm-12 product-img">
+          <img
+            src="chiller3.jpeg"
+            alt="Chiller1"
+            class="img"
+            width="100%"
+            onclick="redirectToProductDetail(4)"
+          />
+          <h3 class="product-text">Air cooled water chiller</h3>
+        </div>
+    <!--product 5 with img and name and onclick evenet applied to img with index 5-->
+        <div class="col-md-4 col-xl-4 col-lg-4 col-xs-12 col-sm-12 product-img">
+          <img
+            src="chiller5.jpeg"
+            alt="chiller2"
+            class="img"
+            width="100%"
+            onclick="redirectToProductDetail(5)"
+          />
+          <h3 class="product-text">Air cooled screw chiller</h3>
+        </div>
+    <!--product 6 with img and name and onclick event applied to img with index 6-->
+        <div class="col-md-4 col-xl-4 col-lg-4 ccol-xs-12 col-sm-12 product-img">
+          <img
+            src="generator2.png"
+            alt="generator"
+            class="img"
+            width="100%"
+            onclick="redirectToProductDetail(6)"
+          />
+          <h3 class="product-text">industrial power diesel generator</h3>
+        </div>
+      </div>
+    </div>
+<!--footer of the webapge containing product names, news and contact info-->
+      <footer class="footer">
+        <!--row info containing list of products company sale-->
+        <div class="row info">
+  <div class="col-xl-4 col-md-4 col-lg-4 col-sm-12 col-xs-12 info-list">
+    <h2 class="heading">Products</h2>
+    <ul class="product-list">
+      <li>Scroll Chillers</li>
+      <li>Water-Cooled Chillers</li>
+      <li>Screw Chillers</li>
+      <li>Air-Cooled Chillers</li>
+      <li>Generators</li>
+      <li>Compressors</li>
+      <li>Motors</li>
+    </ul>
+  </div>
+  <div class="col-xl-4 col-md-4 col-lg-4 col-sm-12 col-xs-12 info-list">
+    <h2 class="heading">News</h2>
+      <!--link of all the news-->
+<ul class="product-list">
+  <li>
+    <a href="https://www.aggreko.com/en-fj/news/2020/noeur-articles/how-do-chillers-and-cooling-towers-work" target="_blank">How do chillers work?</a>
+  </li>
+  <li>
+    <a href="https://www.legacychillers.com/knowledge-base/running-a-chiller-on-generator-power/" target="_blank">How to run chillers on generators?</a>
+  </li>
+  <li>
+    <a href="https://www.tranebelgium.com/files/book-doc/12/fr/12.1hp13yp1.pdf" target="_blank">Chiller design and control</a>
+  </li>
+  <li>
+    <a href="https://www.energy.gov/eere/amo/articles/absorption-chillers-chp-systems-doe-chp-technology-fact-sheet-series-fact-sheet" target="_blank">Absorption chiller for CHP system</a>
+  </li>
+  <li>
+    <a href="https://www.iqsdirectory.com/articles/chillers.html">Types of chillers </a>
+  </li>
+</ul>
+  </div>
+  <!--div containing the contact info-->
+  <div class="col-xl-4 col-md-4 col-lg-4 col-sm-12 col-xs-12 info-list">
+    <h2 class="heading">Contact</h2>
+    <ul class="product-list">
+      <li>
+        <!--address of the company-->
+    <i class="fa fa-map-marker" style="font-size:25px"></i>
+    PLOT NO.129, STREET NO.2, SHARIF GARDEN, MACHINERY MARKET, DAROGAWALA LAHORE
+  </li>
+  <li>
+    <!--phone number1-->
+    <i class="fa fa-phone" style="font-size:25px"></i>
+    0321-9466454
+  </li>
+  <li>
+    <!--phone number2-->
+    <i class="fa fa-phone" style="font-size:25px"></i>
+    0300-9466454
+  </li>
+  </ul>
+  </div>
+</div>
+        
+<!--copyright div containing the socila medi icon and reserved rights-->
+<div class="copyright">
+  <div class="social-icons">
+    <!--twitter icon-->
+    <a href="https://twitter.com" target="_blank" class="social-icon">
+        <i class="fa fa-twitter"></i>
+    </a>
+        <!--facebook icon-->
+    <a href="https://www.facebook.com" target="_blank" class="social-icon">
+        <i class="fa fa-facebook"></i>
+    </a>
+        <!--youtube icon-->
+    <a href="https://www.youtube.com" target="_blank" class="social-icon">
+        <i class="fa fa-youtube"></i>
+    </a>
+        <!--instagram icon-->
+    <a href="https://instagram.com" target="_blank" class="social-icon">
+        <i class="fa fa-instagram"></i>
+    </a>
+</div>
+<!--footer text showing reserved rights of company-->
+        <p clas="footer-text" style="color: black">
+          &copy; 2023 Prime Power Traders. All rights reserved.
+        </p>
+      </div>
+      </footer>
+        <!--javascript part for page navigation and products linkage with detail page-->
+      <script>
+          //page navigation to the home page
+        document.getElementById('Home').addEventListener('click', function() {
+          navigateToPage('homepage.html');
+        });
+      //page navigation to about us page
+        document.getElementById('About').addEventListener('click', function() {
+          navigateToPage('About_Us.html');
+        });
+    //page navigation to the contact us page
+        document.getElementById('Product').addEventListener('click', function() {
+        navigateToPage('Products.html');});
+//page navigation to the product page
+        document.getElementById('Contact').addEventListener('click', function() {
+        navigateToPage('Contact_Us.html');
+      });
+      
+        function navigateToPage(page) {
+          // Use window.location to navigate to the specified page
+          window.location.href = page;
+        }
+
+// Function to redirect to the product detail page based on the clicked image
+function redirectToProductDetail(productIndex) {
+// Redirect to the product detail page with a query parameter
+window.location.href = `Product_detail.html?product=${productIndex}`;
+}
+
+
+  //function for searching the content in product detail page
+  function SearchAndHighlight() {
+        // Get the search input value from search bar after click and store in var
+        var searchInput = document.getElementById('searchInput').value.toLowerCase();
+
+        // Store the search term in local storage and use this searched content indetail page from storage to highlight content
+        localStorage.setItem('searchTerm2', searchInput);
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+/*property applied to whole page*/
+*{
+overflow-x: hidden; /* Hide horizontal scrollbar */
+padding: 0;
+margin: 0;
+}
+/*property of margin and padding given to al the heading h1,h2,h3 of the page to make them appear more aigned*/
+.heading{
+padding:20px;
+margin:10px;
+text-align: center;
+}
+/* property set to body*/
+.body {
+box-sizing: border-box;
+background-color: black;
+color: white;
+}
+/* panel having the header part div*/
+.panel {
+display: flex;/* Using flexbox to ensure all list items stay in a row */
+align-items: center;/*all element inside aligned to center*/
+height: 1%;
+}
+
+#LOGO {
+border-radius: 15px;/* rounded corners of the logo 15px rounded*/
+padding: 10px;/* padding set to 10px*/
+height: auto;
+width: 100%;
+align-items: center;
+max-height: 120px; /* Adjust the maximum height as needed */
+margin: 0 10px; /* Adjust the margin as needed for spacing between icons */
+}
+/* properties set to nav bar*/
+.Navg {
+background-color: #f8f9fa;
+width: 100%; /*max width of nav bar set to 100%*/
+padding: 10px;/* padding of 10px given to nav bar*/
+}
+
+.nav_link {
+color: blue;/* links having blue color*/
+text-align: center;/* aliged to center*/
+text-decoration: none; /* Remove default underlines */
+margin-right:1%;
+}
+
+/*hover property given to the links*/
+.nav_link:hover {
+color: black;
+}
+
+
+ul {
+list-style: none; /* list style none */
+display: flex; /* Use flexbox to ensure all list items stay in a row */
+justify-content: space-around; /* Adjust the spacing between items */
+align-items: center; /* Center items vertically within the navbar */
+}
+
+.list {
+text-align: center;
+}
+
+.footer-text {
+margin-top: 10px; /* Adjust the margin as needed for space between icons and text */
+}
+/* footer part of page having all info */
+.footer {
+background-color: #f8f9fa;
+text-align: center;/*all text aligned to center*/
+margin-top: 40px;
+width: 100%; /* foter given width of 100%  full width of page*/
+}
+/* info in the footer like contact and news div*/
+.info{
+padding: 10px;
+margin:10px;
+}
+
+/*the unordered list having the product we sale*/
+.info .product-list {
+list-style-type: none;/* style set to none*/
+padding: 0;
+padding-bottom: 80px;/* padding given at bottom to separate the content with sapcecs*/
+margin: 0;
+display: block;/* display set to block*/
+
+}
+
+.info .product-list li {
+margin-bottom: 10px;
+width: 100%; /* Add this line to force a line break */
+text-align: center;
+
+}
+/* footer inner div  showing cmpany reserve drights and icons*/
+.copyright{
+background-color: gray;
+border-top: 10px solid black;
+height:150px;
+
+}
+/*all the list showing news and product name set to black color text */
+.info-list{
+color:black;
+}
+/* text decoration of list anchors removed and color changed to black*/
+.product-list li a{
+text-decoration: none;
+color:black;
+}
+/* panel 3 contaning info about company*/
+.panel3{
+margin: 60px;
+padding: 30px;
+color: white;
+text-align: justify;
+}
+
+/* panel3 inner paragraph contaning info about company*/
+.panel3 p{
+display: inline-block; /* justification works on inline elements */
+width: 100%; /* Ensures each line covers the whole width */
+}
+
+/* panel2 containing banner height set to 500px*/
+.panel2 {
+height: 500px;
+}
+
+/* social media icons having display of flex to align them to center in row easily*/
+.social-icons {
+display: flex;
+justify-content: center;
+}
+
+.social-icon {
+display: inline-block;/* all icons in one line row*/
+width: 30px;/* width and height given to the each icon*/
+height: 30px;
+background-size: cover;
+background-position: center;
+padding: 10px;
+font-size: 20px; /* Adjust the size as needed */
+margin: 0 10px; 
+color:blue;
+padding-bottom:50px;
+overflow: hidden;
+}
+

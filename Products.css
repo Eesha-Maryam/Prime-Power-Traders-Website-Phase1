@@ -1,0 +1,199 @@
+/*property applied to whole page*/
+*{
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  padding: 0;
+  margin: 0;
+  }
+/* property set to body*/
+.body {
+box-sizing: border-box; /*control sizing of the box model of body*/
+background-color: black;
+color: white;
+}
+/*property of margin and padding given to al the heading h1,h2,h3 of the page to make them appear more aigned*/
+.heading{
+padding:20px;
+margin:10px;
+margin-bottom:20px;
+text-align: center;
+}
+/*heading in the footer section*/
+.info-list .heading{
+padding:20px;
+margin:10px;
+text-align: center;/*aligned center to its parent info-list*/
+}
+
+/* panel having the header part div*/
+.panel {
+  display: flex;/* Using flexbox to ensure all list items stay in a row */
+  align-items: center;/*all element inside aligned to center*/
+  height: 1%;
+  }
+
+
+#LOGO {
+border-radius: 15px;/* rounded corners of the logo 15px rounded*/
+padding: 10px;/* padding set to 10px*/
+width: 100%; /* width se to 100% of its parent*/
+align-items: center;/*align ogo center to its parent element div*/
+max-height: 120px; /* Adjust the maximum height as needed */
+margin: 0 10px; /* Adjust the margin as needed for spacing between icons */
+}
+.nav_link {
+color: blue;/* links having blue color*/
+text-align: center;/* aliged to center*/
+text-decoration: none; /* Remove default underlines */
+margin-right:1%;
+}
+/*hover property given to the links*/
+.nav_link:hover {
+color: black;
+}
+/* properties set to nav bar*/
+.Navg {
+background-color: #f8f9fa;
+width: 100%;/*max width of nav bar set to 100%*/
+padding: 10px;/* padding of 10px given to nav bar*/
+margin-bottom: 50px;
+}
+
+ul {
+list-style: none;
+display: flex; /* Using flexbox to ensure all list items stay in a row */
+justify-content: space-around; /* Adjust the spacing between items */
+align-items: center; /* Center items vertically within the navbar */
+}
+
+.list {
+text-align: center;
+}
+
+/* product container containing products*/
+.product-container {
+display: flex;/* Using flexbox to ensure all list items stay in a row */
+flex-wrap: wrap; /*wrap all content around this element flexbox*/
+justify-content: space-around;
+margin-bottom:80px;
+}
+/* name o f products*/
+.product-text {
+text-align: center;
+padding: 10px;/* Adjust the padding as needed for space between product and its text */
+margin: 10px; /* Adjust margin as needed */
+}
+
+.footer-text {
+margin-top: 10px; /* Adjust the margin as needed for space between icons and text */
+}
+
+/* footer part of page having all info */
+.footer {
+background-color: #f8f9fa;
+text-align: center;/*all text aligned to center*/
+width: 100%;/* foter given width of 100%  full width of page*/
+}
+/* info in the footer like contact and news div*/
+.info{
+padding: 10px;
+margin:10px;
+}
+
+/*the unordered list having the product we sale*/
+.info .product-list {
+list-style-type: none;/* style set to none*/
+padding: 0;
+padding-bottom: 80px;/* padding given at bottom to separate the content with sapcecs*/
+margin: 0;
+display: block;/* display set to block*/
+}
+
+.info .product-list li {
+margin-bottom: 10px;
+width: 100%; /* Add this line to force a line break */
+text-align: center;
+}
+/* footer inner div  showing cmpany reserve drights and icons*/
+.copyright{
+background-color: gray;
+border-top: 10px solid black;
+height:150px;
+
+}
+/*all the list showing news and product name set to black color text */
+.info-list{
+color:black;
+}
+
+/* text decoration of list anchors removed and color changed to black*/
+.product-list li a{
+text-decoration: none;
+color:black;
+}
+/* img of all products*/
+.img {
+padding: 10px; /* Adjust padding as needed */
+width: 100%;
+height: auto; /* Allow the height to adjust proportionally to the width */
+height: 200px; /* Set a maximum height to prevent images from becoming too large */
+}
+/* all products div containing images of all products*/
+.All-Products{
+padding:10px; /*padding and margin around the products set to 10px*/
+margin:50px;
+}
+
+/* social media icons having display of flex to align them to center in row easily*/
+.social-icons {
+    display: flex; /* flexbox used to move all icons in a row justfied in center of flex box socil-icons*/
+    justify-content: center;
+  }
+  
+  .social-icon {
+    display: inline-block;/* all icons in one line row*/
+    width: 30px;/* width and height given to the each icon*/
+    height: 30px;
+    background-size: cover; /* cover the whole background*/
+    background-position: center;
+    padding: 10px;/* padding set to 10px*/
+    font-size: 20px; /* Adjust the size as needed */
+    margin: 0 10px; 
+    color:blue;
+    padding-bottom:50px;/*bottom padding set to 50px*/
+    overflow: hidden;
+  }
+  /* search bar div in which their is button and search input field*/
+  #searchbar{
+    display: flex;  /*flexbox for aligning input field and buton in a row*/
+    padding-bottom:15px;
+    align-items: center; /* align items inside to center*/
+    align-self: center; 
+    justify-content: center;
+    margin-top:10px;
+  }
+  
+  /* search input field*/
+  #searchInput{
+    width:40%; /*width of 40% set for field*/
+   background-color: black;
+   color: #ddd;
+  font-size: 25px; /* font size of text in search par 25px*/
+  padding:5px;
+  
+  }
+  /*search button that highlight content on click*/
+  .searchbtn{
+    padding:6px;
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    border:5px;
+    border-radius: 3px;
+  }
+  /*search button applied hover*/
+  .searchbtn:hover{
+    background-color: gray;
+  }
+.product-img{
+  margin-bottom:50px;
+}

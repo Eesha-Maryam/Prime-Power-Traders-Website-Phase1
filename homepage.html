@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--link of css page of home page-->
+  <link rel="stylesheet" href="homepage.css" />
+  <!--javascript link from boostrap 4.0-->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <title>Home Page</title>
+</head>
+<!--body of webpage having bootstarp class container fluid covering whole widh th page-->
+<body class="container-fluid body">
+  <!--logo of the company in header-->
+  <header class="row panel">
+    <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-6">
+      <img
+        id="LOGO"
+        src="logo4.png"
+        alt="PRIME_POWER"
+        width="100%"
+        height="auto"
+      />
+    </div>
+    
+    <!--social media icons in header-->
+      <div class="col-md-6 col-lg-6 col-xl-6 col-sm-6 col-xs-6 social-icons" >
+        <a href="https://twitter.com" target="_blank" class="social-icon" style="margin-right: 8%;">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="social-icon" style="margin-right: 8%;">
+            <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://www.youtube.com" target="_blank" class="social-icon" style="margin-right: 8%;">
+            <i class="fa fa-youtube"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-icon">
+            <i class="fa fa-instagram"></i>
+        </a>
+    </div>
+  </header>
+    <!--search bar div containg the input field search bar-->
+    <div id="searchbar" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <!--input field having the id searchinput used in javascript to apply highlighting function to the entered content-->
+      <input type="text" id="searchInput" placeholder="Enter term you want to search...">
+      <!--button containing the onclick event to highligh on button click-->
+      <button class="searchbtn" onclick="SearchAndHighlight()">Search</button> 
+            </div>
+<!--Nav bar of the webpage having links to home,About_Us,Product and contact page-->
+  <nav class="Navg">
+    <ul class="row">
+      <li class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-xs-3 list">
+        <a id="Home" class="nav_link" href="#" target="_blank">Home</a>
+      </li>
+      <li class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-xs-3 list">
+        <a id="About" class="nav_link" href="#">About Us</a>
+      </li>
+      <li class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-xs-3 list">
+        <a id="Product" class="nav_link" href="#">Product</a>
+      </li>
+      <li class="col-xl-3 col-lg-3 col-sm-3 col-md-3 col-xs-3 list">
+        <a id="Contact" class="nav_link" style="color: black" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!--banner of the homepage showing main products of the company-->
+  <div class="row">
+    <img
+      class="col-lg-12 col-xl-12 col-md-12 col-sx-12 col-sm-12 panel2"
+      src="HomeBanner.jpg"
+      alt="company banner"
+    />
+  </div>
+<!--panel3 row having mission statement etc of the company-->
+  <div class="row panel3">
+    <!-- heading related to mission statement-->
+    <h1 class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12" style="overflow: hidden;">
+      Prime Power: Energizing Your Industrial Vision
+    </h1>
+    <p class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12">
+      Welcome to Prime Power traders, your premier destination for top-tier
+      import and export solutions in the realm of industrial machinery.
+      Specializing in the trade of high-performance equipment such as chillers
+      and generators, we pride ourselves on delivering unparalleled quality
+      and efficiency to our clients worldwide. With a commitment to
+      excellence, we seamlessly bridge the gap between manufacturers and
+      businesses, ensuring a smooth and reliable flow of industrial machinery
+      across borders. Our dedicated team is adept at navigating the
+      complexities of international trade, guaranteeing a hassle-free
+      experience for our valued partners. At PrimePower traders, we don't just
+      move machinery; we propel businesses toward success by providing the
+      technological backbone they need. Trust us to be your strategic partner
+      in the global industrial landscape, as we redefine the standards of
+      import and export with precision, reliability, and unmatched expertise.
+    </p>
+  </div>
+<!-- row showing the latest products-->
+  <div class="row">
+    <!-- heading with heading latest product-->
+    <h3 class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12 heading" style="margin-left:20px">
+      Latest Product
+    </h3>
+  </div>
+  <div class="row product-container">
+    <!--product 1 in container cover 4 size of grid-->
+    <div class="col-md-4 col-xl-4 col-lg-4 col-xs-4 col-sm-4">
+      <img
+        src="chiller1.png"
+        alt="Chiller1"
+        width:100%;
+        class="img"
+        onclick="redirectToProductDetail(1)"
+      />
+      <h3 class="product-text">70 Ton Scroll Chiller</h3>
+    </div>
+<!--product 2 in container cover 4 size of the grid-->
+    <div class="col-md-4 col-xl-4 col-lg-4 col-xs-4 col-sm-4">
+      <img
+        src="chiller2.png"
+        alt="chiller2"
+        class="img"
+        width:100%;
+        onclick="redirectToProductDetail(2)"
+      />
+      <h3 class="product-text">DE33 GC (50 Hz)</h3>
+    </div>
+<!--product 2 in container cover 4 size of the grid-->
+    <div class="col-md-4 col-xl-4 col-lg-4 col-xs-4 col-sm-4">
+      <img
+        src="generator.png"
+        alt="generator"
+        class="img"
+        width:100%;
+        onclick="redirectToProductDetail(3)"
+      />
+      <h3 class="product-text">Diesel generator</h3>
+    </div>
+  </div>
+
+<!--foter of the page having social media icons along with copyright ,news and contact info-->
+  <footer class="footer">
+    <div class="row info">
+      <!--product list in the div list of product we sale-->
+<div class="col-xl-4 col-md-4 col-lg-4 col-sm-12 col-xs-12 info-list">
+<h2 class="heading">Products</h2>
+<ul class="product-list">
+  <li>Scroll Chillers</li>
+  <li>Water-Cooled Chillers</li>
+  <li>Screw Chillers</li>
+  <li>Air-Cooled Chillers</li>
+  <li>Generators</li>
+  <li>Compressors</li>
+  <li>Motors</li>
+</ul>
+</div>
+<!--news related to product and new info related the chillers-->
+<div class="col-xl-4 col-md-4 col-lg-4 col-sm-12 col-xs-12 info-list">
+<h2 class="heading">News</h2>
+<ul class="product-list">
+<li>
+<a href="https://www.aggreko.com/en-fj/news/2020/noeur-articles/how-do-chillers-and-cooling-towers-work" target="_blank">How do chillers work?</a>
+</li>
+<li>
+<a href="https://www.legacychillers.com/knowledge-base/running-a-chiller-on-generator-power/" target="_blank">How to run chillers on generators?</a>
+</li>
+<li>
+<a href="https://www.tranebelgium.com/files/book-doc/12/fr/12.1hp13yp1.pdf" target="_blank">Chiller design and control</a>
+</li>
+<li>
+<a href="https://www.energy.gov/eere/amo/articles/absorption-chillers-chp-systems-doe-chp-technology-fact-sheet-series-fact-sheet" target="_blank">Absorption chiller for CHP system</a>
+</li>
+<li>
+<a href="https://www.iqsdirectory.com/articles/chillers.html">Types of chillers </a>
+</li>
+</ul>
+</div>
+
+<!--contact related info in  div having grid size 4-->
+<div class="col-xl-4 col-md-4 col-lg-4 col-sm-12 col-xs-12 info-list">
+<h2 class="heading">Contact</h2>
+<ul class="product-list">
+  <li>
+<i class="fa fa-map-marker" style="font-size:25px"></i>
+PLOT NO.129, STREET NO.2, SHARIF GARDEN, MACHINERY MARKET, DAROGAWALA LAHORE
+</li>
+<li>
+<i class="fa fa-phone" style="font-size:25px"></i>
+0321-9466454
+</li>
+<li>
+<i class="fa fa-phone" style="font-size:25px"></i>
+0300-9466454
+</li>
+</ul>
+</div>
+</div>
+
+    <!--social media icons in the footer-->
+<div class="copyright">
+<div class="social-icons">
+<a href="https://twitter.com" target="_blank" class="social-icon">
+    <i class="fa fa-twitter"></i>
+</a>
+<a href="https://www.facebook.com" target="_blank" class="social-icon">
+    <i class="fa fa-facebook"></i>
+</a>
+<a href="https://www.youtube.com" target="_blank" class="social-icon">
+    <i class="fa fa-youtube"></i>
+</a>
+<a href="https://instagram.com" target="_blank" class="social-icon">
+    <i class="fa fa-instagram"></i>
+</a>
+</div>
+<!--footer text showing reserved rights of company-->
+    <p clas="footer-text" style="color: black">
+      &copy; 2023 Prime Power Traders. All rights reserved.
+    </p>
+  </div>
+  </footer>
+  
+  <!--javascript part for page navigation and products linkage with detail page-->
+  <script>
+
+    //page navigation to the home page
+  document.getElementById('Home').addEventListener('click', function() {
+    navigateToPage('homepage.html');
+  });
+
+    //page navigation to about us page
+  document.getElementById('About').addEventListener('click', function() {
+    navigateToPage('About_Us.html');
+  });
+
+    //page navigation to the contact us page
+  document.getElementById('Contact').addEventListener('click', function() {
+    navigateToPage('Contact_Us.html');
+  });
+
+    //page navigation to the product page
+  document.getElementById('Product').addEventListener('click', function() {
+    navigateToPage('Products.html');
+  });
+
+  
+  function navigateToPage(page) {
+    // window.location to navigate to the specified page
+    window.location.href = page;
+
+    
+  }
+    // Function to redirect to the product detail page based on the clicked image
+    function redirectToProductDetail(productIndex) {
+      // Redirect to the product detail page with a query parameter
+      window.location.href = `Product_detail.html?product=${productIndex}`;
+    }
+  
+    // Function to scroll to the product detail section where the required product detail resides
+    function scrollToProductDetail(productIndex) { // index of the product helps to scroll to detail section
+      const productDetailSection = document.getElementById(`product${productIndex}`); //concatenates the product with the product index number like product1, product2 sonon
+      if (productDetailSection) { //if product1 id exists true
+        productDetailSection.scrollIntoView({ behavior: 'smooth' }); // then scroll smoothly to that section having the id
+      } else {
+        console.error(`Product detail section ${productIndex} not found`); //else error shows on the console on vs code terminal
+      }
+    }
+
+  //function for searching the content in product detail page
+    function SearchAndHighlight() {
+        // Get the search input value from search bar after click and store in var
+        var searchInput = document.getElementById('searchInput').value.toLowerCase();
+
+        // Store the search term in local storage and use this searched content indetail page from storage to highlight content
+        localStorage.setItem('searchTerm2', searchInput);
+
+    }
+  </script>
+</body>
+</html>

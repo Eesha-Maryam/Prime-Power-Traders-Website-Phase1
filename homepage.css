@@ -1,0 +1,213 @@
+
+/*property applied to whole page*/
+*{
+overflow-x: hidden; /*overflow-x hidden for responsiveness and padding,margin set to 0*/
+padding: 0;
+margin: 0;
+}
+
+/*property of margin and padding given to al the heading h1,h2,h3 of the page to make them appear more aigned*/
+.heading {
+  padding: 20px;
+  margin: 10px;
+}
+.panel2{
+  width:100%;
+  height:100%;
+}
+/* property set to body*/
+.body {
+  box-sizing: border-box;
+  background-color: black; /*bg color set to back and text set to white color*/
+  color: white;
+}
+
+.img {
+  padding: 10px; /* Adjust padding as needed */
+  width: 100%;
+  height: 200px; /* maximum height to prevent images from becoming too large */
+}
+/* product container containing the product images*/
+.product-container {
+  display: flex; /* display flex */
+  flex-wrap: wrap; /* wraps the contant and imgs around the element*/
+  justify-content: space-around; 
+  margin-bottom:50px;
+}
+/* names of the products aligned center and margin and padding given of about 10px*/
+.product-text {
+  text-align: center;
+  padding: 10px;
+  margin: 10px; /* Adjust margin as needed */
+}
+
+/* panel 3 containing mission statemet asnd paragraph containing info of company*/
+.panel3 {
+  text-align: center;
+  margin: 60px;
+  margin-top:100px; 
+  margin-left:auto;
+  margin-right:auto;
+  padding: 10px;
+  color: white;
+}
+
+#LOGO {
+  border-radius: 15px; /* rounded corners of the logo 15px rounded*/
+  padding: 10px; /* padding set to 10px*/
+  max-width: 100%;
+  align-items: center;
+  max-height: 120px; /* Adjust the maximum height as needed */
+  margin: 0 10px; /* Adjust the margin as needed for spacing between icons */
+}
+
+/* paragraph aligned to center and justified too*/
+p {
+  color: white;
+  text-align:center;
+  justify-content: center;
+}
+
+/* properties set to nav bar*/
+.Navg {
+  justify-content: center;
+  background-color: #f8f9fa;
+  max-width: 100%; /*max width of nav bar set to 100%*/
+  padding: 10px; /* padding of 10px given to nav bar*/
+  border-bottom:3px solid black;
+  overflow-x: visible; /*overflow in x-axis is hidden*/
+}
+
+.nav_link {
+  color: blue; /* links having blue color*/
+  text-align: center;/* aliged to center*/
+  text-decoration: none; /* Remove default underlines */
+  margin-right:5px;
+}
+/*hover property given to the links*/
+.nav_link:hover {
+color: black;
+}
+
+/* panel having the header part div*/
+.panel {
+  display: flex;/* Using flexbox to ensure all list items stay in a row */
+  align-items: center; /*all element inside aligned to center*/
+  height: 1%;
+}
+
+
+ul {
+  list-style: none; /* list style none */
+  display: flex; /* Use flexbox to ensure all list items stay in a row */
+  justify-content: space-around; /* Adjust the spacing between items */
+  align-items: center; /* Center items vertically within the navbar */
+}
+
+.list {
+  text-align: center;
+}
+
+/* social media icons having display of flex to align them to center in row easily*/
+.social-icons {
+display: flex;
+justify-content: center;
+margin-top:10px;
+}
+
+.social-icon {
+display: inline-block; /* all icons in one line row*/
+max-width: 30px;/* width and height given to the each icon*/
+max-height: 30px;
+background-size: cover;
+background-position: center;
+padding: 10px;
+font-size: 20px; /* Adjust the size as needed */
+margin: 0 10px; 
+color:blue;
+padding-bottom:50px;
+overflow: hidden; /* overflow x,y hidden*/
+}
+
+.footer-text {
+
+margin-top: 10px; /* Adjust the margin as needed for space between icons and text */
+}
+
+/* footer part of page having all info */
+.footer {
+background-color: #f8f9fa;
+text-align: center; /*all text aligned to center*/
+margin-top: 40px;
+width: 100%; /* foter given width of 100%  full width of page*/
+}
+/* info in the footer like contact and news div*/
+.info{
+padding: 10px;
+}  
+/*the unordered list having the product we sale*/
+.info .product-list {
+list-style-type: none; /* style set to none*/
+padding: 0;
+padding-bottom: 80px; /* padding given at bottom to separate the content with sapcecs*/
+margin: 0;
+display: block; /* display set to block*/
+
+}
+
+
+.info .product-list li {
+margin-bottom: 10px;
+max-width: 100%; /* Add this line to force a line break */
+text-align: center;
+
+}
+/* footer inner div  showing cmpany reserve drights and icons*/
+.copyright{
+background-color: gray; /*bg color set to gray*/
+border-top: 10px solid black; /* with border at top to appear well*/
+height:150px;
+}
+
+/*all the list showing news and product name set to black color text */
+.info-list{
+color:black;
+}
+/* text decoration of list anchors removed and color changed to black*/
+.product-list li a{
+text-decoration: none;
+color:black;
+}
+
+  /* search bar div in which their is button and search input field*/
+  #searchbar{
+    display: flex;  /*flexbox for aligning input field and buton in a row*/
+    padding-bottom:15px;
+    align-items: center; /* align items inside to center*/
+    align-self: center; 
+    justify-content: center;
+    margin-top:10px;
+  }
+  
+  /* search input field*/
+  #searchInput{
+    width:40%; /*width of 40% set for field*/
+   background-color: black;
+   color: #ddd;
+  font-size: 25px; /* font size of text in search par 25px*/
+  padding:5px;
+  
+  }
+  /*search button that highlight content on click*/
+  .searchbtn{
+    padding:6px;
+    font-size: 25px;
+    background-color: white;
+    color: black;
+    border:5px; /*MAKING SEARCH BUTTON BORDERS*/
+    border-radius: 3px;
+  }
+  /*search button applied hover*/
+  .searchbtn:hover{
+    background-color: gray;
+  }
